@@ -29,6 +29,11 @@ const Products = () => {
       ],
       color: "#F5DEB3",
       category: "monofloral",
+      prices: {
+        "200g": 85,
+        "300g": 120,
+        "500g": 180
+      }
     },
     {
       image: lindenImage,
@@ -43,6 +48,11 @@ const Products = () => {
       ],
       color: "#DAA520",
       category: "monofloral",
+      prices: {
+        "200g": 90,
+        "300g": 130,
+        "500g": 190
+      }
     },
     {
       image: sunflowerImage,
@@ -57,6 +67,11 @@ const Products = () => {
       ],
       color: "#FFD700",
       category: "monofloral",
+      prices: {
+        "200g": 75,
+        "300g": 110,
+        "500g": 165
+      }
     },
     {
       image: polyfloralImage,
@@ -71,6 +86,11 @@ const Products = () => {
       ],
       color: "#8B4513",
       category: "polyfloral",
+      prices: {
+        "200g": 80,
+        "300g": 115,
+        "500g": 170
+      }
     },
     {
       image: sageImage,
@@ -85,6 +105,11 @@ const Products = () => {
       ],
       color: "#E6E6FA",
       category: "monofloral",
+      prices: {
+        "200g": 95,
+        "300g": 140,
+        "500g": 200
+      }
     },
   ];
 

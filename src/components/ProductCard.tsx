@@ -10,9 +10,12 @@ interface ProductCardProps {
   description: string;
   benefits: string[];
   color: string;
+  prices?: {
+    [key: string]: number;
+  };
 }
 
-const ProductCard = ({ image, name, latinName, description, benefits, color }: ProductCardProps) => {
+const ProductCard = ({ image, name, latinName, description, benefits, color, prices }: ProductCardProps) => {
   return (
     <Card className="group overflow-hidden hover:shadow-hover transition-all duration-300 hover:-translate-y-2 bg-card">
       {/* Image Container */}
@@ -42,7 +45,7 @@ const ProductCard = ({ image, name, latinName, description, benefits, color }: P
         <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{description}</p>
         
         {/* Benefits */}
-        <div className="space-y-2">
+        <div className="space-y-2 mb-4">
           <p className="text-xs font-semibold text-foreground">Beneficii Cheie:</p>
           <ul className="space-y-1">
             {benefits.slice(0, 2).map((benefit, index) => (
@@ -53,11 +56,28 @@ const ProductCard = ({ image, name, latinName, description, benefits, color }: P
             ))}
           </ul>
         </div>
+
+        {/* Prices */}
+        {prices && (
+          <div className="space-y-2">
+            <p className="text-xs font-semibold text-foreground">Prețuri:</p>
+            <div className="grid grid-cols-3 gap-2">
+              {Object.entries(prices).map(([size, price]) => (
+                <div key={size} className="text-center bg-muted/30 rounded-lg p-2">
+                  <div className="text-xs font-medium text-foreground">{size}</div>
+                  <div className="text-sm font-bold text-primary">{price} MDL</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </CardContent>
 
       <CardFooter className="flex justify-center">
         <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
-          <Link to="/contact">Solicitați Ofertă</Link>
+          <Link to={prices ? `/checkout?product=${encodeURIComponent(name)}` : "/products"}>
+            {prices ? "Cumpără Acum" : "Vezi Prețuri"}
+          </Link>
         </Button>
       </CardFooter>
     </Card>
