@@ -18,27 +18,27 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Premium Moldovan honey producer since 2004. ISO 9001:2008 & ISO 22000:2005 certified.
+              Producător premium de miere din Moldova din 2004. Certificat ISO 9001:2008 & ISO 22000:2005.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Quick Links</h4>
+            <h4 className="font-semibold mb-4 text-primary">Link-uri Rapide</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/" className="opacity-80 hover:opacity-100 hover:text-primary transition-all">
-                  Home
+                  Acasă
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="opacity-80 hover:opacity-100 hover:text-primary transition-all">
-                  About Us
+                  Despre Noi
                 </Link>
               </li>
               <li>
                 <Link to="/products" className="opacity-80 hover:opacity-100 hover:text-primary transition-all">
-                  Products
+                  Produse
                 </Link>
               </li>
               <li>
@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Contact Us</h4>
+            <h4 className="font-semibold mb-4 text-primary">Contactați-ne</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <Phone className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
@@ -82,7 +82,7 @@ const Footer = () => {
 
           {/* Address & Certifications */}
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Location</h4>
+            <h4 className="font-semibold mb-4 text-primary">Locație</h4>
             <div className="flex items-start space-x-2 mb-4 text-sm">
               <MapPin className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
               <p className="opacity-80 leading-relaxed">
@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/10 mt-8 pt-8 text-center text-sm opacity-80">
-          <p>&copy; {new Date().getFullYear()} S.C. "Vasdiai & Co" S.R.L. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} S.C. "Vasdiai & Co" S.R.L. Toate drepturile rezervate.</p>
         </div>
       </div>
     </footer>

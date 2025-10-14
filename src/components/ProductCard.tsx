@@ -43,7 +43,7 @@ const ProductCard = ({ image, name, latinName, description, benefits, color }: P
         
         {/* Benefits */}
         <div className="space-y-2">
-          <p className="text-xs font-semibold text-foreground">Key Benefits:</p>
+          <p className="text-xs font-semibold text-foreground">Beneficii Cheie:</p>
           <ul className="space-y-1">
             {benefits.slice(0, 2).map((benefit, index) => (
               <li key={index} className="text-xs text-muted-foreground flex items-start">
@@ -57,7 +57,7 @@ const ProductCard = ({ image, name, latinName, description, benefits, color }: P
 
       <CardFooter>
         <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
-          <Link to="/contact">Request Quote</Link>
+          <Link to="/contact">Solicitați Ofertă</Link>
         </Button>
       </CardFooter>
     </Card>

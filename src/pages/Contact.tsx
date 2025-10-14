@@ -26,8 +26,8 @@ const Contact = () => {
     // Basic validation
     if (!formData.name || !formData.email || !formData.inquiryType || !formData.message) {
       toast({
-        title: "Missing Information",
-        description: "Please fill in all required fields.",
+        title: "Informații Lipsă",
+        description: "Vă rugăm să completați toate câmpurile obligatorii.",
         variant: "destructive",
       });
       return;
@@ -37,8 +37,8 @@ const Contact = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
-        title: "Invalid Email",
-        description: "Please enter a valid email address.",
+        title: "Email Invalid",
+        description: "Vă rugăm să introduceți o adresă de email validă.",
         variant: "destructive",
       });
       return;
@@ -46,8 +46,8 @@ const Contact = () => {
 
     // Success message
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your inquiry. We'll respond within 24 hours.",
+      title: "Mesaj Trimis!",
+      description: "Vă mulțumim pentru solicitare. Vom răspunde în 24 de ore.",
     });
 
     // Reset form
@@ -64,7 +64,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Phone",
+      title: "Telefon",
       details: ["+373 79 43 70 26", "+373 69 99 25 22"],
       link: "tel:+37379437026",
     },
@@ -82,8 +82,8 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Address",
-      details: ["Str. Independentei nr 38", "Stefan Voda, MD-6512", "Republic of Moldova"],
+      title: "Adresă",
+      details: ["Str. Independentei nr 38", "Stefan Voda, MD-6512", "Republica Moldova"],
       link: "https://maps.google.com/?q=Stefan+Voda+Moldova",
     },
   ];
@@ -97,10 +97,10 @@ const Contact = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-6">
-              Get In Touch
+              Contactați-ne
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Ready to partner with us? We're here to answer your questions about wholesale orders, custom packaging, and export partnerships.
+              Gata să deveniți parteneri cu noi? Suntem aici să răspundem la întrebările dumneavoastră despre comenzi en-gros, ambalare personalizată și parteneriate de export.
             </p>
           </div>
         </div>
@@ -114,8 +114,8 @@ const Contact = () => {
               <a
                 key={index}
                 href={item.link}
-                target={item.title === "Website" || item.title === "Address" ? "_blank" : undefined}
-                rel={item.title === "Website" || item.title === "Address" ? "noopener noreferrer" : undefined}
+                target={item.title === "Website" || item.title === "Adresă" ? "_blank" : undefined}
+                rel={item.title === "Website" || item.title === "Adresă" ? "noopener noreferrer" : undefined}
                 className="bg-card rounded-xl p-6 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 group"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -140,83 +140,83 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-card rounded-xl p-8 shadow-card">
               <h2 className="text-3xl font-serif font-bold text-foreground mb-6">
-                Send Us a Message
+                Trimiteți-ne un Mesaj
               </h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name">Full Name *</Label>
+                  <Label htmlFor="name">Nume Complet *</Label>
                   <Input
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="John Doe"
+                    placeholder="Ion Popescu"
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email">Email Address *</Label>
+                  <Label htmlFor="email">Adresă Email *</Label>
                   <Input
                     id="email"
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="john@company.com"
+                    placeholder="ion@companie.ro"
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="company">Company Name</Label>
+                  <Label htmlFor="company">Nume Companie</Label>
                   <Input
                     id="company"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    placeholder="Your Company Ltd."
+                    placeholder="Compania Dumneavoastră S.R.L."
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="phone">Phone Number</Label>
+                  <Label htmlFor="phone">Număr Telefon</Label>
                   <Input
                     id="phone"
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+1 234 567 8900"
+                    placeholder="+373 xxx xxx xxx"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="inquiryType">Inquiry Type *</Label>
+                  <Label htmlFor="inquiryType">Tip Solicitare *</Label>
                   <Select value={formData.inquiryType} onValueChange={(value) => setFormData({ ...formData, inquiryType: value })}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select inquiry type" />
+                      <SelectValue placeholder="Selectați tipul solicitării" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="wholesale">Wholesale Inquiry</SelectItem>
-                      <SelectItem value="export">Export Partnership</SelectItem>
-                      <SelectItem value="packaging">Custom Packaging Request</SelectItem>
-                      <SelectItem value="general">General Question</SelectItem>
+                      <SelectItem value="wholesale">Solicitare en-gros</SelectItem>
+                      <SelectItem value="export">Parteneriat de Export</SelectItem>
+                      <SelectItem value="packaging">Cerere Ambalare Personalizată</SelectItem>
+                      <SelectItem value="general">Întrebare Generală</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div>
-                  <Label htmlFor="message">Message *</Label>
+                  <Label htmlFor="message">Mesaj *</Label>
                   <Textarea
                     id="message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us about your requirements..."
+                    placeholder="Spuneți-ne despre cerințele dumneavoastră..."
                     rows={5}
                     required
                   />
                 </div>
 
                 <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white font-semibold">
-                  Send Message
+                  Trimiteți Mesajul
                   <Send className="ml-2 h-4 w-4" />
                 </Button>
               </form>
@@ -228,25 +228,25 @@ const Contact = () => {
               <div className="bg-card rounded-xl p-8 shadow-card">
                 <div className="flex items-center space-x-3 mb-6">
                   <Clock className="h-6 w-6 text-primary" />
-                  <h3 className="text-2xl font-semibold text-foreground">Business Hours</h3>
+                  <h3 className="text-2xl font-semibold text-foreground">Program de Lucru</h3>
                 </div>
                 <div className="space-y-3 text-muted-foreground">
                   <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span className="font-medium">9:00 AM - 6:00 PM</span>
+                    <span>Luni - Vineri</span>
+                    <span className="font-medium">9:00 - 18:00</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span className="font-medium">10:00 AM - 2:00 PM</span>
+                    <span>Sâmbătă</span>
+                    <span className="font-medium">10:00 - 14:00</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span className="font-medium">Closed</span>
+                    <span>Duminică</span>
+                    <span className="font-medium">Închis</span>
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-primary/10 rounded-lg">
                   <p className="text-sm text-foreground">
-                    <strong>Quick Response Time:</strong> We typically respond to inquiries within 24 hours during business days.
+                    <strong>Timp Rapid de Răspuns:</strong> De obicei răspundem la solicitări în 24 de ore în zilele lucrătoare.
                   </p>
                 </div>
               </div>
@@ -254,13 +254,13 @@ const Contact = () => {
               {/* Export Markets */}
               <div className="bg-card rounded-xl p-8 shadow-card">
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Export Markets
+                  Piețe de Export
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  We currently export to 8+ countries across Europe and beyond. Our experienced logistics team ensures reliable international shipping.
+                  Exportăm în prezent în peste 8 țări din Europa și nu numai. Echipa noastră experimentată de logistică asigură transport internațional fiabil.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["EU Markets", "USA", "Middle East", "Asia Pacific"].map((market, index) => (
+                  {["Piețe UE", "SUA", "Orientul Mijlociu", "Asia Pacific"].map((market, index) => (
                     <span key={index} className="inline-block bg-primary/10 px-4 py-2 rounded-full text-sm font-medium text-foreground">
                       {market}
                     </span>
@@ -271,7 +271,7 @@ const Contact = () => {
               {/* Map Placeholder */}
               <div className="bg-card rounded-xl p-8 shadow-card">
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Our Location
+                  Locația Noastră
                 </h3>
                 <div className="aspect-video bg-muted/30 rounded-lg flex items-center justify-center">
                   <a
@@ -281,7 +281,7 @@ const Contact = () => {
                     className="flex flex-col items-center space-y-2 text-muted-foreground hover:text-primary transition-colors"
                   >
                     <MapPin className="h-12 w-12" />
-                    <span className="font-medium">View on Google Maps</span>
+                    <span className="font-medium">Vezi pe Google Maps</span>
                   </a>
                 </div>
               </div>
@@ -296,30 +296,30 @@ const Contact = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-                Frequently Asked Questions
+                Întrebări Frecvente
               </h2>
               <p className="text-xl text-muted-foreground">
-                Quick answers to common questions
+                Răspunsuri rapide la întrebări comune
               </p>
             </div>
 
             <div className="space-y-6">
               {[
                 {
-                  q: "What is your minimum order quantity?",
-                  a: "Minimum order quantities vary by product and packaging type. Contact us with your specific requirements for detailed information.",
+                  q: "Care este cantitatea minimă de comandă?",
+                  a: "Cantitățile minime de comandă variază în funcție de produs și tipul de ambalaj. Contactați-ne cu cerințele dumneavoastră specifice pentru informații detaliate.",
                 },
                 {
-                  q: "Do you offer custom packaging and private labeling?",
-                  a: "Yes! We can produce honey in various packaging formats with custom branding based on your specifications.",
+                  q: "Oferiți ambalare personalizată și etichetare privată?",
+                  a: "Da! Putem produce miere în diverse formate de ambalare cu branding personalizat în funcție de specificațiile dumneavoastră.",
                 },
                 {
-                  q: "What certifications do your products have?",
-                  a: "All our products are produced under ISO 9001:2008, ISO 22000:2005, and HACCP certifications. We can provide certificates upon request.",
+                  q: "Ce certificări au produsele dumneavoastră?",
+                  a: "Toate produsele noastre sunt realizate conform certificărilor ISO 9001:2008, ISO 22000:2005 și HACCP. Putem furniza certificate la cerere.",
                 },
                 {
-                  q: "How long does international shipping take?",
-                  a: "Shipping times vary by destination. Typically 5-14 days for European markets and 10-21 days for other regions.",
+                  q: "Cât durează transportul internațional?",
+                  a: "Timpul de livrare variază în funcție de destinație. De obicei 5-14 zile pentru piețele europene și 10-21 zile pentru alte regiuni.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="bg-card rounded-xl p-6 shadow-card">

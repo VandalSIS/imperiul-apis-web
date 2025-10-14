@@ -32,33 +32,33 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-primary/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 animate-fade-in">
             <Award className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">ISO 9001 & 22000 Certified</span>
+            <span className="text-sm font-medium text-foreground">Certificat ISO 9001 & 22000</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight animate-fade-in">
-            Pure Moldovan Honey
-            <span className="block text-primary mt-2">Since 2004</span>
+            Miere Pură din Moldova
+            <span className="block text-primary mt-2">Din 2004</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed animate-fade-in">
-            Premium bulk honey supplier to international markets. Certified quality, natural purity, custom packaging solutions.
+            Furnizor premium de miere în vrac pentru piețe internaționale. Calitate certificată, puritate naturală, soluții personalizate de ambalare.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 mb-8 animate-scale-in">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-1">20+</div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
+              <div className="text-sm text-muted-foreground">Ani Experiență</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-1">8+</div>
-              <div className="text-sm text-muted-foreground">Export Countries</div>
+              <div className="text-sm text-muted-foreground">Țări Export</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-1">100%</div>
-              <div className="text-sm text-muted-foreground">Natural Quality</div>
+              <div className="text-sm text-muted-foreground">Calitate Naturală</div>
             </div>
           </div>
 
@@ -70,7 +70,7 @@ const Hero = () => {
               className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-elegant hover:shadow-hover transition-all"
             >
               <Link to="/contact">
-                Request Wholesale Quote
+                Solicitați Ofertă en-gros
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -80,7 +80,7 @@ const Hero = () => {
               variant="outline"
               className="border-2 border-primary text-foreground hover:bg-primary/5 font-semibold"
             >
-              <Link to="/products">View Our Products</Link>
+              <Link to="/products">Vedeți Produsele</Link>
             </Button>
           </div>
 
@@ -88,15 +88,15 @@ const Hero = () => {
           <div className="flex flex-wrap items-center gap-6 mt-12 text-sm text-muted-foreground animate-fade-in">
             <div className="flex items-center space-x-2">
               <Award className="h-5 w-5 text-primary" />
-              <span>ISO Certified Quality</span>
+              <span>Calitate Certificată ISO</span>
             </div>
             <div className="flex items-center space-x-2">
               <Globe2 className="h-5 w-5 text-primary" />
-              <span>International Shipping</span>
+              <span>Transport Internațional</span>
             </div>
             <div className="flex items-center space-x-2">
               <TrendingUp className="h-5 w-5 text-primary" />
-              <span>Bulk & Custom Orders</span>
+              <span>Comenzi în Vrac & Personalizate</span>
             </div>
           </div>
         </div>

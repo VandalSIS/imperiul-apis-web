@@ -6,62 +6,62 @@ import productionImage from "@/assets/production.jpg";
 
 const About = () => {
   const timeline = [
-    { year: "2004", event: "Company founded by experienced beekeepers" },
-    { year: "2008", event: "Achieved ISO 9001:2008 certification" },
-    { year: "2010", event: "Achieved ISO 22000:2005 and HACCP certification" },
-    { year: "2015", event: "Expanded to 8+ international export markets" },
-    { year: "2024", event: "20 years of excellence in honey production" },
+    { year: "2004", event: "Compania fondată de apicultori experimentați" },
+    { year: "2008", event: "Obținerea certificării ISO 9001:2008" },
+    { year: "2010", event: "Obținerea certificărilor ISO 22000:2005 și HACCP" },
+    { year: "2015", event: "Extindere în peste 8 piețe internaționale de export" },
+    { year: "2024", event: "20 de ani de excelență în producția de miere" },
   ];
 
   const values = [
     {
       icon: Award,
-      title: "Quality First",
-      description: "Every batch of honey meets rigorous international standards with laboratory verification.",
+      title: "Calitatea pe Primul Loc",
+      description: "Fiecare lot de miere respectă standarde internaționale riguroase cu verificare în laborator.",
     },
     {
       icon: Target,
-      title: "Natural Purity",
-      description: "100% natural honey with no additives, preservatives, or artificial processing.",
+      title: "Puritate Naturală",
+      description: "Miere 100% naturală fără aditivi, conservanți sau prelucrare artificială.",
     },
     {
       icon: Users,
-      title: "Customer Focus",
-      description: "Flexible solutions tailored to meet specific requirements of our B2B partners.",
+      title: "Focalizare pe Client",
+      description: "Soluții flexibile adaptate pentru a satisface cerințele specifice ale partenerilor B2B.",
     },
     {
       icon: TrendingUp,
-      title: "Continuous Improvement",
-      description: "Investing in technology and expertise to enhance quality and efficiency.",
+      title: "Îmbunătățire Continuă",
+      description: "Investim în tehnologie și expertiză pentru a spori calitatea și eficiența.",
     },
   ];
 
   const certifications = [
     {
       name: "ISO 9001:2008",
-      description: "International standard for Quality Management Systems, ensuring consistent quality in production.",
+      description: "Standard internațional pentru Sistemele de Management al Calității, asigurând calitate constantă în producție.",
       details: [
-        "Systematic quality control processes",
-        "Continuous monitoring and improvement",
-        "Customer satisfaction focus",
+        "Procese sistematice de control al calității",
+        "Monitorizare și îmbunătățire continuă",
+        "Focalizare pe satisfacția clientului",
       ],
     },
     {
       name: "ISO 22000:2005",
-      description: "Food Safety Management System standard, guaranteeing safe products for consumers.",
+      description: "Standard al Sistemului de Management al Siguranței Alimentare, garantând produse sigure pentru consumatori.",
       details: [
-        "Hazard analysis and control",
-        "Traceability throughout production",
-        "Compliance with food safety regulations",
+        "Analiză și control al pericolelor",
+        "Trasabilitate pe parcursul producției",
+        "Conformitate cu reglementările de siguranță alimentară",
       ],
     },
     {
       name: "HACCP",
-      description: "Hazard Analysis Critical Control Point system for food safety.",
+      description: "Sistem de Analiză a Pericolelor și Puncte Critice de Control pentru siguranța alimentară.",
       details: [
-        "Prevention-focused approach",
-        "Critical control point monitoring",
-        "Risk assessment and mitigation",
+        "Abordare centrată pe prevenire",
+        "Monitorizarea punctelor critice de control",
+        "Evaluare și atenuare a riscurilor",
       ],
     },
   ];
@@ -75,10 +75,10 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-6">
-              Our Story
+              Povestea Noastră
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Two decades of passion, expertise, and commitment to producing the finest Moldovan honey
+              Două decenii de pasiune, expertiză și angajament în producerea celei mai bune mieri moldovenești
             </p>
           </div>
         </div>
@@ -90,28 +90,28 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="space-y-6">
               <h2 className="text-4xl font-serif font-bold text-foreground">
-                Founded by Passionate Beekeepers
+                Fondată de Apicultori Pasionați
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded in 2004 by experienced and devoted beekeepers, S.C. "Vasdiai & Co" S.R.L. specializes 
-                in processing and bottling honey products for both national and international markets.
+                Fondată în 2004 de apicultori experimentați și dedicați, S.C. "Vasdiai & Co" S.R.L. se specializează 
+                în prelucrarea și îmbutelierea produselor din miere pentru piețele naționale și internaționale.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Through our unwavering commitment to quality, we've built an efficient management system 
-                certified to International Quality Management Standards: ISO 9001:2008 and Food Safety 
-                Management: ISO 22000:2005, ensuring our products maintain the highest quality at every 
-                production stage.
+                Prin angajamentul nostru neclintit pentru calitate, am construit un sistem eficient de management 
+                certificat conform Standardelor Internaționale de Management al Calității: ISO 9001:2008 și 
+                Management al Siguranței Alimentare: ISO 22000:2005, asigurându-ne că produsele noastre mențin 
+                cea mai înaltă calitate în fiecare etapă de producție.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our products are sold under the "Imperiul Apis" (The Apis Empire) brand. All products are 
-                natural, healthy, and meet national and international quality standards, tested in accredited 
-                laboratories both domestically and abroad.
+                Produsele noastre sunt vândute sub marca "Imperiul Apis". Toate produsele sunt naturale, 
+                sănătoase și îndeplinesc standardele naționale și internaționale de calitate, testate în 
+                laboratoare acreditate atât în țară cât și în străinătate.
               </p>
             </div>
             <div>
               <img
                 src={beekeepersImage}
-                alt="Beekeepers at work"
+                alt="Apicultori la lucru"
                 className="rounded-xl shadow-hover w-full h-auto"
               />
             </div>
@@ -124,10 +124,10 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-              Our Journey
+              Călătoria Noastră
             </h2>
             <p className="text-xl text-muted-foreground">
-              Milestones in our commitment to excellence
+              Repere în angajamentul nostru pentru excelență
             </p>
           </div>
 
@@ -156,10 +156,10 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-              Our Core Values
+              Valorile Noastre de Bază
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do
+              Principiile care ghidează tot ceea ce facem
             </p>
           </div>
 
@@ -185,10 +185,10 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-              Quality Certifications
+              Certificări de Calitate
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              International standards ensuring the highest quality and safety
+              Standarde internaționale asigurând cea mai înaltă calitate și siguranță
             </p>
           </div>
 
@@ -218,22 +218,22 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-serif font-bold text-foreground mb-4">
-                  Laboratory Testing & Quality Assurance
+                  Testare în Laborator & Asigurarea Calității
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Every batch of our honey undergoes rigorous testing in accredited laboratories both 
-                  nationally and internationally. This ensures that our products consistently meet and 
-                  exceed quality standards.
+                  Fiecare lot de miere este supus unor teste riguroase în laboratoare acreditate atât la nivel 
+                  național cât și internațional. Acest lucru asigură că produsele noastre îndeplinesc și 
+                  depășesc în mod constant standardele de calitate.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our quality control process includes tests for purity, authenticity, moisture content, 
-                  and absence of contaminants, guaranteeing that only the finest honey reaches our customers.
+                  Procesul nostru de control al calității include teste pentru puritate, autenticitate, conținut 
+                  de umiditate și absența contaminanților, garantând că doar cea mai bună miere ajunge la clienții noștri.
                 </p>
               </div>
               <div>
                 <img
                   src={productionImage}
-                  alt="Production facility"
+                  alt="Facilitate de producție"
                   className="rounded-xl shadow-card w-full h-auto"
                 />
               </div>
@@ -248,43 +248,43 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-                Production Capabilities
+                Capacități de Producție
               </h2>
               <p className="text-xl text-muted-foreground">
-                Flexible packaging solutions to meet your specific needs
+                Soluții flexibile de ambalare pentru a satisface nevoile dumneavoastră specifice
               </p>
             </div>
 
             <div className="bg-card rounded-xl p-8 shadow-card">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We can produce honey in various packaging formats based on buyer specifications:
+                Putem produce miere în diverse formate de ambalare în funcție de specificațiile cumpărătorului:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-muted/30 rounded-lg p-6">
-                  <h4 className="font-semibold text-foreground mb-3">Retail Packaging</h4>
+                  <h4 className="font-semibold text-foreground mb-3">Ambalare Retail</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Glass jars (various capacities)</li>
-                    <li>• Food-grade plastic containers</li>
-                    <li>• Custom branding available</li>
+                    <li>• Borcane de sticlă (capacități diverse)</li>
+                    <li>• Recipiente din plastic alimentar</li>
+                    <li>• Branding personalizat disponibil</li>
                   </ul>
                 </div>
                 
                 <div className="bg-muted/30 rounded-lg p-6">
-                  <h4 className="font-semibold text-foreground mb-3">Bulk Packaging</h4>
+                  <h4 className="font-semibold text-foreground mb-3">Ambalare în Vrac</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Metal cans and drums</li>
-                    <li>• Various drum sizes</li>
-                    <li>• Suitable for wholesale</li>
+                    <li>• Cutii și bidoane metalice</li>
+                    <li>• Diverse dimensiuni de bidoane</li>
+                    <li>• Potrivit pentru angro</li>
                   </ul>
                 </div>
                 
                 <div className="bg-muted/30 rounded-lg p-6">
-                  <h4 className="font-semibold text-foreground mb-3">Custom Solutions</h4>
+                  <h4 className="font-semibold text-foreground mb-3">Soluții Personalizate</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Tailored packaging designs</li>
-                    <li>• Private label options</li>
-                    <li>• Specific volume requirements</li>
+                    <li>• Design personalizat de ambalaj</li>
+                    <li>• Opțiuni de etichetă privată</li>
+                    <li>• Cerințe specifice de volum</li>
                   </ul>
                 </div>
               </div>

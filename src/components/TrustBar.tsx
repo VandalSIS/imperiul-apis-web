@@ -5,22 +5,22 @@ const TrustBar = () => {
     {
       icon: Award,
       title: "ISO 9001:2008",
-      subtitle: "Quality Management",
+      subtitle: "Management Calitate",
     },
     {
       icon: Shield,
       title: "ISO 22000:2005",
-      subtitle: "Food Safety",
+      subtitle: "Siguranță Alimentară",
     },
     {
       icon: CheckCircle,
       title: "HACCP",
-      subtitle: "Certified Process",
+      subtitle: "Proces Certificat",
     },
     {
       icon: Globe,
-      title: "8+ Countries",
-      subtitle: "Export Markets",
+      title: "8+ Țări",
+      subtitle: "Piețe de Export",
     },
   ];
 

@@ -17,56 +17,56 @@ const Products = () => {
   const products = [
     {
       image: acaciaImage,
-      name: "Acacia Honey",
+      name: "Miere de Salcâm",
       latinName: "Miere de Salcâm",
-      description: "Light, delicate honey with slow crystallization. Perfect for sweetening beverages and gourmet cooking. Harvested from white acacia blossoms in Moldova's pristine forests.",
+      description: "Miere delicată și ușoară cu cristalizare lentă. Perfectă pentru îndulcirea băuturilor și gătitul gurmand. Recoltată din florile de salcâm alb din pădurile pristine ale Moldovei.",
       benefits: [
-        "Slow crystallization maintains liquid form longer",
-        "Mild, delicate flavor that doesn't overpower",
-        "Rich in antioxidants and natural enzymes",
-        "Ideal for diabetics due to low glycemic index",
+        "Cristalizare lentă menține forma lichidă mai mult timp",
+        "Gust delicat și blând care nu acoperă alte gusturi",
+        "Bogată în antioxidanți și enzime naturale",
+        "Ideală pentru diabetici datorită indicelui glicemic scăzut",
       ],
       color: "#F5DEB3",
       category: "monofloral",
     },
     {
       image: lindenImage,
-      name: "Linden Honey",
+      name: "Miere de Tei",
       latinName: "Miere de Tei",
-      description: "Aromatic honey with medicinal properties. Traditionally used for respiratory health and immune support. Strong, distinctive fragrance from linden tree blossoms.",
+      description: "Miere aromatică cu proprietăți medicinale. Folosită tradițional pentru sănătatea respiratorie și susținerea imunității. Parfum puternic și distinctiv din florile de tei.",
       benefits: [
-        "Natural antibacterial and antiviral properties",
-        "Soothes coughs and sore throats",
-        "Promotes relaxation and better sleep",
-        "Supports immune system function",
+        "Proprietăți antibacteriene și antivirale naturale",
+        "Calmează tusea și durerile în gât",
+        "Promovează relaxarea și somnul mai bun",
+        "Susține funcția sistemului imunitar",
       ],
       color: "#DAA520",
       category: "monofloral",
     },
     {
       image: sunflowerImage,
-      name: "Sunflower Honey",
+      name: "Miere de Floarea Soarelui",
       latinName: "Miere de Floarea Soarelui",
-      description: "Golden honey with quick crystallization. Rich in vitamins and minerals with a bright, sunny flavor. Distinctive golden color from Moldova's vast sunflower fields.",
+      description: "Miere aurie cu cristalizare rapidă. Bogată în vitamine și minerale cu un gust luminos și plăcut. Culoare aurie distinctivă din vastele câmpuri de floarea soarelui din Moldova.",
       benefits: [
-        "High in vitamins A, B, C, and E",
-        "Rich in minerals including iron and calcium",
-        "Quick crystallization creates smooth texture",
-        "Bright, pleasant taste loved by children",
+        "Conținut ridicat de vitamine A, B, C și E",
+        "Bogată în minerale incluzând fier și calciu",
+        "Cristalizarea rapidă creează o textură netedă",
+        "Gust luminos și plăcut iubit de copii",
       ],
       color: "#FFD700",
       category: "monofloral",
     },
     {
       image: polyfloralImage,
-      name: "Polyfloral Honey",
+      name: "Miere Poliflorală",
       latinName: "Miere Polifloră",
-      description: "Complex flavor from diverse wildflowers. Rich, robust taste with exceptional nutritional value. Each batch offers a unique flavor profile based on seasonal blooms.",
+      description: "Gust complex din diverse flori sălbatice. Gust bogat și robust cu valoare nutrițională excepțională. Fiecare lot oferă un profil unic de gust bazat pe florile sezoniere.",
       benefits: [
-        "Complex, rich flavor profile",
-        "Broadest range of nutrients",
-        "Natural energy source for athletes",
-        "Unique taste varies by season",
+        "Profil de gust complex și bogat",
+        "Cea mai largă gamă de nutrienți",
+        "Sursă naturală de energie pentru sportivi",
+        "Gustul unic variază în funcție de sezon",
       ],
       color: "#8B4513",
       category: "polyfloral",
@@ -75,27 +75,27 @@ const Products = () => {
 
   const packagingOptions = [
     {
-      category: "Retail Packaging",
+      category: "Ambalare Retail",
       options: [
-        { size: "250g", type: "Glass Jar", description: "Perfect for retail shelves" },
-        { size: "350g", type: "Glass Jar", description: "Popular consumer size" },
-        { size: "500g", type: "Glass Jar", description: "Family size option" },
+        { size: "250g", type: "Borcan de Sticlă", description: "Perfect pentru rafturi retail" },
+        { size: "350g", type: "Borcan de Sticlă", description: "Dimensiune populară pentru consumatori" },
+        { size: "500g", type: "Borcan de Sticlă", description: "Opțiune dimensiune familie" },
       ],
     },
     {
-      category: "Semi-Bulk Packaging",
+      category: "Ambalare Semi-Vrac",
       options: [
-        { size: "1kg", type: "Plastic Container", description: "Food-grade HDPE" },
-        { size: "10kg", type: "Plastic Bucket", description: "Commercial kitchens" },
-        { size: "25kg", type: "Plastic Bucket", description: "Food manufacturers" },
-        { size: "40kg", type: "Plastic Container", description: "Industrial use" },
+        { size: "1kg", type: "Recipient Plastic", description: "HDPE alimentar" },
+        { size: "10kg", type: "Găleată Plastic", description: "Bucătării comerciale" },
+        { size: "25kg", type: "Găleată Plastic", description: "Producători alimentari" },
+        { size: "40kg", type: "Recipient Plastic", description: "Uz industrial" },
       ],
     },
     {
-      category: "Bulk Packaging",
+      category: "Ambalare în Vrac",
       options: [
-        { size: "290kg", type: "Metal Drum", description: "International export" },
-        { size: "Custom", type: "Various", description: "Tailored to your needs" },
+        { size: "290kg", type: "Bidon Metalic", description: "Export internațional" },
+        { size: "Personalizat", type: "Diverse", description: "Adaptat nevoilor dvs." },
       ],
     },
   ];
@@ -113,10 +113,10 @@ const Products = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-6">
-              Our Honey Collection
+              Colecția Noastră de Miere
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Premium natural honey varieties from Moldova's finest apiaries
+              Varietăți premium naturale de miere din cele mai bune apiarii din Moldova
             </p>
           </div>
         </div>
@@ -131,21 +131,21 @@ const Products = () => {
               onClick={() => setSelectedCategory("all")}
               className={selectedCategory === "all" ? "bg-primary text-white" : ""}
             >
-              All Products
+              Toate Produsele
             </Button>
             <Button
               variant={selectedCategory === "monofloral" ? "default" : "outline"}
               onClick={() => setSelectedCategory("monofloral")}
               className={selectedCategory === "monofloral" ? "bg-primary text-white" : ""}
             >
-              Monofloral Honey
+              Miere Monoflorală
             </Button>
             <Button
               variant={selectedCategory === "polyfloral" ? "default" : "outline"}
               onClick={() => setSelectedCategory("polyfloral")}
               className={selectedCategory === "polyfloral" ? "bg-primary text-white" : ""}
             >
-              Polyfloral Honey
+              Miere Poliflorală
             </Button>
           </div>
         </div>
@@ -168,10 +168,10 @@ const Products = () => {
           <div className="text-center mb-12">
             <Package className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-              Packaging Options
+              Opțiuni de Ambalare
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Flexible packaging solutions from retail jars to bulk drums
+              Soluții flexibile de ambalare de la borcane retail la bidoane în vrac
             </p>
           </div>
 
@@ -202,14 +202,14 @@ const Products = () => {
 
           <div className="mt-12 bg-card rounded-xl p-8 shadow-card text-center">
             <h3 className="text-2xl font-semibold text-foreground mb-4">
-              Custom Packaging Solutions
+              Soluții Personalizate de Ambalare
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Need something specific? We can produce honey in jars or bottles with different capacities 
-              based on your requirements. Private labeling and custom branding available.
+              Aveți nevoie de ceva specific? Putem produce miere în borcane sau sticle cu capacități diferite 
+              în funcție de cerințele dumneavoastră. Etichetare privată și branding personalizat disponibil.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
-              <Link to="/contact">Request Custom Quote</Link>
+              <Link to="/contact">Solicitați Ofertă Personalizată</Link>
             </Button>
           </div>
         </div>
@@ -220,28 +220,28 @@ const Products = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-12 text-center">
             <h2 className="text-3xl font-serif font-bold text-foreground mb-4">
-              Quality Guarantee
+              Garanție de Calitate
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              All our honey products are:
+              Toate produsele noastre de miere sunt:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="bg-background/80 rounded-lg p-6">
-                <h4 className="font-semibold text-foreground mb-2">100% Natural</h4>
+                <h4 className="font-semibold text-foreground mb-2">100% Naturală</h4>
                 <p className="text-sm text-muted-foreground">
-                  No additives, preservatives, or artificial processing
+                  Fără aditivi, conservanți sau prelucrare artificială
                 </p>
               </div>
               <div className="bg-background/80 rounded-lg p-6">
-                <h4 className="font-semibold text-foreground mb-2">Laboratory Tested</h4>
+                <h4 className="font-semibold text-foreground mb-2">Testată în Laborator</h4>
                 <p className="text-sm text-muted-foreground">
-                  Verified in accredited labs nationally and internationally
+                  Verificată în laboratoare acreditate la nivel național și internațional
                 </p>
               </div>
               <div className="bg-background/80 rounded-lg p-6">
-                <h4 className="font-semibold text-foreground mb-2">Certified Quality</h4>
+                <h4 className="font-semibold text-foreground mb-2">Calitate Certificată</h4>
                 <p className="text-sm text-muted-foreground">
-                  ISO 9001, ISO 22000, and HACCP certified production
+                  Producție certificată ISO 9001, ISO 22000 și HACCP
                 </p>
               </div>
             </div>

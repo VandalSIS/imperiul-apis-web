@@ -17,9 +17,9 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Products", path: "/products" },
+    { name: "Acasă", path: "/" },
+    { name: "Despre Noi", path: "/about" },
+    { name: "Produse", path: "/products" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -80,7 +80,7 @@ const Navigation = () => {
               <span>+373 79 43 70 26</span>
             </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-white font-medium shadow-elegant">
-              <Link to="/contact">Request Quote</Link>
+              <Link to="/contact">Solicitați Ofertă</Link>
             </Button>
           </div>
 
@@ -124,7 +124,7 @@ const Navigation = () => {
               </a>
               <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
                 <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  Request Quote
+                  Solicitați Ofertă
                 </Link>
               </Button>
             </div>

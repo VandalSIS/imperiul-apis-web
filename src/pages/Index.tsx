@@ -18,34 +18,34 @@ const Index = () => {
   const featuredProducts = [
     {
       image: acaciaImage,
-      name: "Acacia Honey",
+      name: "Miere de Salcâm",
       latinName: "Miere de Salcâm",
-      description: "Light, delicate honey with slow crystallization. Perfect for sweetening beverages and gourmet cooking.",
-      benefits: ["Slow crystallization", "Mild, delicate flavor", "Rich in antioxidants"],
+      description: "Miere delicată și ușoară cu cristalizare lentă. Perfectă pentru îndulcirea băuturilor și gătitul gurmand.",
+      benefits: ["Cristalizare lentă", "Gust delicat și blând", "Bogată în antioxidanți"],
       color: "#F5DEB3",
     },
     {
       image: lindenImage,
-      name: "Linden Honey",
+      name: "Miere de Tei",
       latinName: "Miere de Tei",
-      description: "Aromatic honey with medicinal properties. Traditionally used for respiratory health and immune support.",
-      benefits: ["Medicinal properties", "Aromatic and soothing", "Supports respiratory health"],
+      description: "Miere aromatică cu proprietăți medicinale. Folosită tradițional pentru sănătatea respiratorie și susținerea imunității.",
+      benefits: ["Proprietăți medicinale", "Aromatică și calmantă", "Susține sănătatea respiratorie"],
       color: "#DAA520",
     },
     {
       image: sunflowerImage,
-      name: "Sunflower Honey",
+      name: "Miere de Floarea Soarelui",
       latinName: "Miere de Floarea Soarelui",
-      description: "Golden honey with quick crystallization. Rich in vitamins and minerals with a bright, sunny flavor.",
-      benefits: ["High vitamin content", "Quick crystallization", "Bright, pleasant taste"],
+      description: "Miere aurie cu cristalizare rapidă. Bogată în vitamine și minerale cu un gust luminos și plăcut.",
+      benefits: ["Conținut ridicat de vitamine", "Cristalizare rapidă", "Gust plăcut și luminos"],
       color: "#FFD700",
     },
     {
       image: polyfloralImage,
-      name: "Polyfloral Honey",
+      name: "Miere Poliflorală",
       latinName: "Miere Polifloră",
-      description: "Complex flavor from diverse wildflowers. Rich, robust taste with exceptional nutritional value.",
-      benefits: ["Complex flavor profile", "Rich in nutrients", "Natural energy source"],
+      description: "Gust complex din diverse flori sălbatice. Gust bogat și robust cu valoare nutrițională excepțională.",
+      benefits: ["Profil de gust complex", "Bogată în nutrienți", "Sursă naturală de energie"],
       color: "#8B4513",
     },
   ];
@@ -53,23 +53,23 @@ const Index = () => {
   const whyChooseUs = [
     {
       icon: Award,
-      title: "Certified Quality",
-      description: "ISO 9001:2008 and ISO 22000:2005 certified production ensuring highest international standards.",
+      title: "Calitate Certificată",
+      description: "Producție certificată ISO 9001:2008 și ISO 22000:2005 asigurând cele mai înalte standarde internaționale.",
     },
     {
       icon: Beaker,
-      title: "Laboratory Tested",
-      description: "All products tested in accredited laboratories both nationally and internationally.",
+      title: "Testat în Laborator",
+      description: "Toate produsele testate în laboratoare acreditate atât național cât și internațional.",
     },
     {
       icon: Package,
-      title: "Custom Packaging",
-      description: "Flexible packaging solutions from retail jars to bulk drums based on your requirements.",
+      title: "Ambalare Personalizată",
+      description: "Soluții flexibile de ambalare de la borcane retail la containere în vrac în funcție de cerințele dumneavoastră.",
     },
     {
       icon: Truck,
-      title: "Global Export",
-      description: "Established export channels to 8+ countries with reliable international shipping.",
+      title: "Export Global",
+      description: "Canale de export stabilite în peste 8 țări cu transport internațional fiabil.",
     },
   ];
 
@@ -84,10 +84,10 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
-              Our Premium Honey Collection
+              Colecția Noastră Premium de Miere
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Natural, pure honey varieties from Moldova's finest apiaries
+              Varietăți naturale și pure de miere din cele mai bune apiarii din Moldova
             </p>
           </div>
 
@@ -102,7 +102,7 @@ const Index = () => {
           <div className="text-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-elegant">
               <Link to="/products">
-                View All Products
+                Vedeți Toate Produsele
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -115,10 +115,10 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
-              Why Choose APISMD
+              De Ce Să Alegeți APISMD
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Two decades of expertise in honey production and export
+              Două decenii de expertiză în producția și exportul de miere
             </p>
           </div>
 
@@ -145,20 +145,20 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-                Our Story: From Hive to Harvest
+                Povestea Noastră: De la Stup la Recoltă
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded in 2004 by passionate beekeepers, S.C. "Vasdiai & Co" S.R.L. has grown into a trusted 
-                name in honey production and export. Our commitment to quality led us to implement rigorous 
-                management systems certified to international standards.
+                Fondată în 2004 de apicultori pasionați, S.C. "Vasdiai & Co" S.R.L. a crescut până la a deveni 
+                un nume de încredere în producția și exportul de miere. Angajamentul nostru pentru calitate ne-a 
+                determinat să implementăm sisteme riguroase de management certificate la standarde internaționale.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Under the "Imperiul Apis" brand, we deliver 100% natural, healthy honey products that meet 
-                national and international quality standards, tested in accredited laboratories worldwide.
+                Sub marca "Imperiul Apis", livrăm produse de miere 100% naturale și sănătoase care respectă 
+                standardele naționale și internaționale de calitate, testate în laboratoare acreditate în întreaga lume.
               </p>
               <Button asChild size="lg" variant="outline" className="border-2 border-primary text-foreground hover:bg-primary/5">
                 <Link to="/about">
-                  Learn More About Us
+                  Aflați Mai Multe Despre Noi
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -194,17 +194,17 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Ready to Partner with Us?
+              Gata Să Deveniți Partenerul Nostru?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Request a wholesale quote or inquire about custom packaging solutions for your business.
+              Solicitați o ofertă en-gros sau informați-vă despre soluțiile de ambalare personalizate pentru afacerea dumneavoastră.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                <Link to="/contact">Request Wholesale Quote</Link>
+                <Link to="/contact">Solicitați Ofertă en-gros</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
-                <Link to="/products">Browse Products</Link>
+                <Link to="/products">Răsfoiți Produsele</Link>
               </Button>
             </div>
           </div>
