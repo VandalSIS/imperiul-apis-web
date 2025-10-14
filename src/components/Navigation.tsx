@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,25 +33,20 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 relative">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-md opacity-50 group-hover:opacity-75 transition-opacity" />
-              <div className="relative w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">🐝</span>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-xl font-serif font-bold text-foreground">
-                APISMD
-              </h1>
-              <p className="text-xs text-muted-foreground">Imperiul Apis</p>
+          <Link to="/" className="flex items-center group">
+            <div className="relative w-36 h-36 flex items-center justify-center">
+              <img 
+                src={logo} 
+                alt="APISMD Logo" 
+                className="w-full h-full object-contain transition-transform group-hover:scale-105"
+              />
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
