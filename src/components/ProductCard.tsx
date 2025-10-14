@@ -55,7 +55,7 @@ const ProductCard = ({ image, name, latinName, description, benefits, color }: P
         </div>
       </CardContent>
 
-      <CardFooter>
+      <CardFooter className="flex justify-center">
         <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
           <Link to="/contact">Solicitați Ofertă</Link>
         </Button>

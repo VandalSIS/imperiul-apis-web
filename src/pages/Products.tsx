@@ -6,10 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Package, Droplet } from "lucide-react";
 
-import acaciaImage from "@/assets/acacia-honey.jpg";
-import lindenImage from "@/assets/linden-honey.jpg";
-import sunflowerImage from "@/assets/sunflower-honey.jpg";
-import polyfloralImage from "@/assets/polyfloral-honey.jpg";
+import acaciaImage from "@/assets/Imperiul Apis 300 g.jpg";
+import lindenImage from "@/assets/Imperiul Apis 500 g.jpg";
+import sunflowerImage from "@/assets/Imperiul Apis 500 g 1.jpg";
+import polyfloralImage from "@/assets/Imperiul Apis 500 g si 300 g.jpg";
+import sageImage from "@/assets/Paragon 200 g.jpg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -71,14 +72,28 @@ const Products = () => {
       color: "#8B4513",
       category: "polyfloral",
     },
+    {
+      image: sageImage,
+      name: "Miere de Salvie",
+      latinName: "Miere de Salvie",
+      description: "Miere aromatică cu proprietăți terapeutice distinctive. Culoare deschisă cu gust delicat și parfum floral subtil. Recoltată din florile de salvie din zonele montane ale Moldovei.",
+      benefits: [
+        "Proprietăți antiseptice și antiinflamatoare",
+        "Susține sănătatea digestivă",
+        "Gust delicat și aromat",
+        "Bogată în antioxidanți naturali",
+      ],
+      color: "#E6E6FA",
+      category: "monofloral",
+    },
   ];
 
   const packagingOptions = [
     {
       category: "Ambalare Retail",
       options: [
-        { size: "250g", type: "Borcan de Sticlă", description: "Perfect pentru rafturi retail" },
-        { size: "350g", type: "Borcan de Sticlă", description: "Dimensiune populară pentru consumatori" },
+        { size: "200g", type: "Borcan de Sticlă", description: "Perfect pentru rafturi retail" },
+        { size: "300g", type: "Borcan de Sticlă", description: "Dimensiune populară pentru consumatori" },
         { size: "500g", type: "Borcan de Sticlă", description: "Opțiune dimensiune familie" },
       ],
     },
@@ -154,7 +169,7 @@ const Products = () => {
       {/* Products Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {filteredProducts.map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}
