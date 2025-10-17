@@ -200,10 +200,10 @@ const Index = () => {
               Solicitați o ofertă en-gros sau informați-vă despre soluțiile de ambalare personalizate pentru afacerea dumneavoastră.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 font-semibold">
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold shadow-lg">
                 <Link to="/contact">Solicitați Ofertă en-gros</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary font-semibold">
                 <Link to="/products">Răsfoiți Produsele</Link>
               </Button>
             </div>

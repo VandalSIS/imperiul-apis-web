@@ -73,8 +73,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-2">
                 <Globe className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
-                <a href="http://www.apismd.com" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:text-primary transition-colors">
-                  www.apismd.com
+                <a href="https://www.apismd.eu/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:text-primary transition-colors">
+                  www.apismd.eu
                 </a>
               </li>
             </ul>
@@ -111,17 +111,17 @@ const Footer = () => {
             {/* Logos */}
             <div className="flex items-center justify-center space-x-4 sm:space-x-8">
               <img 
-                src="/src/assets/sweeden_logo-300x121.png" 
+                src="/sweeden_logo-300x121.png" 
                 alt="Sweden Logo" 
                 className="h-8 sm:h-12 object-contain"
               />
               <img 
-                src="/src/assets/uk_dev_logo-300x113.png" 
+                src="/uk_dev_logo-300x113.png" 
                 alt="UK International Development Logo" 
                 className="h-8 sm:h-12 object-contain"
               />
               <img 
-                src="/src/assets/undp_logo.png" 
+                src="/undp_logo.png" 
                 alt="UNDP Logo" 
                 className="h-8 sm:h-12 object-contain"
               />
