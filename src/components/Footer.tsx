@@ -105,6 +105,40 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Funding Disclaimer Section */}
+        <div className="border-t border-secondary-foreground/10 mt-8 pt-8">
+          <div className="flex flex-col items-center space-y-6">
+            {/* Logos */}
+            <div className="flex items-center justify-center space-x-4 sm:space-x-8">
+              <img 
+                src="/src/assets/sweeden_logo-300x121.png" 
+                alt="Sweden Logo" 
+                className="h-8 sm:h-12 object-contain"
+              />
+              <img 
+                src="/src/assets/uk_dev_logo-300x113.png" 
+                alt="UK International Development Logo" 
+                className="h-8 sm:h-12 object-contain"
+              />
+              <img 
+                src="/src/assets/undp_logo.png" 
+                alt="UNDP Logo" 
+                className="h-8 sm:h-12 object-contain"
+              />
+            </div>
+            
+            {/* Disclaimer Text */}
+            <div className="text-center text-xs opacity-70 max-w-4xl leading-relaxed">
+              <p className="italic">
+                Acest site web a fost realizat cu asistența financiară a Suediei și Marii Britanii, în cadrul proiectului „Dezvoltarea capacităților de export pe malurile Nistrului" (AdTrade), implementat de PNUD. Conținutul acestui site web este responsabilitatea exclusivă a autorului și nu reprezintă neapărat punctele de vedere ale PNUD, Suediei sau Marii Britanii.
+              </p>
+              <p className="mt-2 italic">
+                PNUD nu promovează nicio entitate, marcă, produs sau serviciu.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="border-t border-secondary-foreground/10 mt-8 pt-8 text-center text-sm opacity-80">
           <p>&copy; {new Date().getFullYear()} S.C. "Vasdiai & Co" S.R.L. Toate drepturile rezervate.</p>
         </div>
